@@ -12,13 +12,13 @@ namespace AnimalPlanet
         {
             using (var ctx = new AnimalContext())
             {
-                var results = ctx.Animals;
+                var parrot = new Parrot("Captain", "Steve");
+                var parrot2 = new Parrot("Jack", "Steve");
+                var parrot3 = new Parrot("Sparrow", "Steve");
 
-                foreach (Animal animal in results)
-                {
-                    if(animal is ICanFly)
-                        Console.WriteLine(animal.Name + " is flying " + ((ICanFly)animal).Flying );
-                }
+                ctx.Animals.Add(parrot);
+                ctx.Animals.Add(parrot2);
+                ctx.Animals.Add(parrot3);
 
                 ctx.SaveChanges();
             }
