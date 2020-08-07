@@ -55,18 +55,18 @@
   <ItemGroup>
     <Compile Include="Animal.cs" />
     <Compile Include="AnimalContext.cs" />
-    <Compile Include="Dog.cs" />
+    <Compile Include="HouseAnimals\Dog.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="House.cs" />
-    <Compile Include="HouseAnimal.cs" />
+    <Compile Include="HouseAnimals\HouseAnimal.cs" />
     <Compile Include="Interfaces\IBark.cs" />
     <Compile Include="Interfaces\ICanFly.cs" />
-    <Compile Include="Parrot.cs" />
+    <Compile Include="HouseAnimals\Parrot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SugarGlider.cs" />
-    <Compile Include="WildAnimal.cs" />
-    <Compile Include="Wolf.cs" />
+    <Compile Include="HouseAnimals\SugarGlider.cs" />
+    <Compile Include="WilfAnimals\WildAnimal.cs" />
+    <Compile Include="WilfAnimals\Wolf.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
